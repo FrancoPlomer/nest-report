@@ -8,6 +8,7 @@ import { PrinterModule } from 'src/printer/printer.module';
 @Module({
   controllers: [BasicReportsController],
   providers: [BasicReportsService],
-  imports: [PrinterModule]
+  imports: [PrinterModule],
+  exports: [BasicReportsService]
 })
 export class BasicReportsModule {}
